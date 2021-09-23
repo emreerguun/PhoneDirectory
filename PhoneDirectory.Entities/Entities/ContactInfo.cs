@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace PhoneDirectory.Entities.Entities
@@ -13,6 +14,6 @@ namespace PhoneDirectory.Entities.Entities
 
         public int UserID { get; set; }
 
-        public User User { get; set; }
+        public virtual User User { get; set; }
     }
 }

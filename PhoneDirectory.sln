@@ -3,24 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDirectory.WebApi", "PhoneDirectory.WebApi\PhoneDirectory.WebApi.csproj", "{0CA914A2-6715-4431-B24B-0DB8CE7DDC62}"
-	ProjectSection(ProjectDependencies) = postProject
-		{8587F25F-3620-4617-BB87-593A8B397433} = {8587F25F-3620-4617-BB87-593A8B397433}
-		{40A10C74-A1EF-4C78-93DA-9B2177E19054} = {40A10C74-A1EF-4C78-93DA-9B2177E19054}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDirectory.Business", "PhoneDirectory.Business\PhoneDirectory.Business.csproj", "{40A10C74-A1EF-4C78-93DA-9B2177E19054}"
-	ProjectSection(ProjectDependencies) = postProject
-		{8587F25F-3620-4617-BB87-593A8B397433} = {8587F25F-3620-4617-BB87-593A8B397433}
-		{E98181BF-8DDD-444E-8A74-25B99FE2C080} = {E98181BF-8DDD-444E-8A74-25B99FE2C080}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDirectory.DataAccess", "PhoneDirectory.DataAccess\PhoneDirectory.DataAccess.csproj", "{E98181BF-8DDD-444E-8A74-25B99FE2C080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDirectory.WebApi", "PhoneDirectory.WebApi\PhoneDirectory.WebApi.csproj", "{0CA914A2-6715-4431-B24B-0DB8CE7DDC62}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8587F25F-3620-4617-BB87-593A8B397433} = {8587F25F-3620-4617-BB87-593A8B397433}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDirectory.Entities", "PhoneDirectory.Entities\PhoneDirectory.Entities.csproj", "{8587F25F-3620-4617-BB87-593A8B397433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDirectory.DataAccess", "PhoneDirectory.DataAccess\PhoneDirectory.DataAccess.csproj", "{E98181BF-8DDD-444E-8A74-25B99FE2C080}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8587F25F-3620-4617-BB87-593A8B397433} = {8587F25F-3620-4617-BB87-593A8B397433}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneDirectory.Entities", "PhoneDirectory.Entities\PhoneDirectory.Entities.csproj", "{8587F25F-3620-4617-BB87-593A8B397433}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +25,6 @@ Global
 		{0CA914A2-6715-4431-B24B-0DB8CE7DDC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA914A2-6715-4431-B24B-0DB8CE7DDC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA914A2-6715-4431-B24B-0DB8CE7DDC62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40A10C74-A1EF-4C78-93DA-9B2177E19054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40A10C74-A1EF-4C78-93DA-9B2177E19054}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40A10C74-A1EF-4C78-93DA-9B2177E19054}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40A10C74-A1EF-4C78-93DA-9B2177E19054}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E98181BF-8DDD-444E-8A74-25B99FE2C080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E98181BF-8DDD-444E-8A74-25B99FE2C080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E98181BF-8DDD-444E-8A74-25B99FE2C080}.Release|Any CPU.ActiveCfg = Release|Any CPU
