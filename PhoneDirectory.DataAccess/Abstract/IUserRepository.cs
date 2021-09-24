@@ -9,8 +9,8 @@ namespace PhoneDirectory.DataAccess.Abstract
     {
         List<User> GetAllUser();
         User GetUserByID(int userID);
-        void AddUser(User entity);
-        void UpdateUser(User entity);
-        void DeleteUser(int userID);
+        int AddUser(User entity);
+        int UpdateUser(User entity);
+        int DeleteUser(int userID);
     }
 }

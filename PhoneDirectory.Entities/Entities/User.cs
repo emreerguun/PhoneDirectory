@@ -12,7 +12,6 @@ namespace PhoneDirectory.Entities.Entities
             ContactInfos = new HashSet<ContactInfo>();
         }
 
-
         public int UserID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }

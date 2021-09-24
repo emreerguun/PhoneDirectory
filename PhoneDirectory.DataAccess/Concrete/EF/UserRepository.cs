@@ -25,20 +25,20 @@ namespace PhoneDirectory.DataAccess.Concrete.EF
             return context.Users.FirstOrDefault(x => x.UserID == userID);
         }
 
-        public void AddUser(User entity)
+        public int AddUser(User entity)
         {
             context.Users.Add(entity);
-            context.SaveChanges();
+            return context.SaveChanges();
         }
 
-        public void DeleteUser(int userID)
+        public int DeleteUser(int userID)
         {
             User user = GetUserByID(userID);
             context.Users.Remove(user);
-            context.SaveChanges();
+            return context.SaveChanges();
         }
 
-        public void UpdateUser(User entity)
+        public int UpdateUser(User entity)
         {
             User user = GetUserByID(entity.UserID);
             if (user!=null)
@@ -47,7 +47,7 @@ namespace PhoneDirectory.DataAccess.Concrete.EF
                 user.Surname = entity.Surname;
                 user.Company = entity.Company;
             }
-            context.SaveChanges();
+            return context.SaveChanges();
         }
     }
 }

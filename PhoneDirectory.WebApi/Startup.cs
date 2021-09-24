@@ -12,6 +12,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using PhoneDirectory.DataAccess.Concrete.EF;
 using Microsoft.EntityFrameworkCore;
+using PhoneDirectory.DataAccess.Abstract;
+using PhoneDirectory.Business.Abstract;
+using PhoneDirectory.Business.BLL;
 
 namespace PhoneDirectory.WebApi
 {
@@ -26,7 +29,9 @@ namespace PhoneDirectory.WebApi
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {   
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IUserBLL, UserBLL>();
             services.AddDbContext<PhoneDirectoryContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),b=>b.MigrationsAssembly("PhoneDirectory.WebApi")));
             services.AddControllers();
         }

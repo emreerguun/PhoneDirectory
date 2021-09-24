@@ -11,7 +11,6 @@ namespace PhoneDirectory.Entities.Entities
         public int InfoType { get; set; }
         public string InfoContent { get; set; }
 
-
         public int UserID { get; set; }
 
         public virtual User User { get; set; }
