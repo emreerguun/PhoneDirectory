@@ -41,12 +41,9 @@ namespace PhoneDirectory.DataAccess.Concrete.EF
         public int UpdateUser(User entity)
         {
             User user = GetUserByID(entity.UserID);
-            if (user!=null)
-            {
                 user.Name = entity.Name;
                 user.Surname = entity.Surname;
                 user.Company = entity.Company;
-            }
             return context.SaveChanges();
         }
     }

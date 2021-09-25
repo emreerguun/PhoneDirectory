@@ -7,9 +7,8 @@ namespace PhoneDirectory.DataAccess.Abstract
 {
     public interface IContactInfoRepository
     {
-        ContactInfo GetContactInfoByID(int contactID);
-        void AddContactInfo(ContactInfo entity);
-        void UpdateContactInfo(ContactInfo entity);
-        void DeleteContactInfo(int contactID);
+        List<ContactInfo> GetContactInfosByUserID(int userID);
+        int AddContactInfo(ContactInfo entity);
+        int DeleteContactInfo(int userID,int contactID);
     }
 }

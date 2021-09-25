@@ -31,7 +31,9 @@ namespace PhoneDirectory.WebApi
         public void ConfigureServices(IServiceCollection services)
         {   
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IContactInfoRepository, ContactInfoRepository>();
             services.AddTransient<IUserBLL, UserBLL>();
+            services.AddTransient<IContactInfoBLL, ContactInfoBLL>();
             services.AddDbContext<PhoneDirectoryContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),b=>b.MigrationsAssembly("PhoneDirectory.WebApi")));
             services.AddControllers();
         }

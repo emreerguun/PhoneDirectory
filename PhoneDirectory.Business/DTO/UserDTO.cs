@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PhoneDirectory.WebApi.DTO
+namespace PhoneDirectory.Business.DTO
 {
     public class UserDTO
     {
